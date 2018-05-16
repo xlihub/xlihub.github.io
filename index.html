@@ -323,7 +323,7 @@
                 
               
 
-              <time title="创建时间：2018-05-16 14:24:16 / 修改时间：16:03:22" itemprop="dateCreated datePublished" datetime="2018-05-16T14:24:16+08:00">2018-05-16</time>
+              <time title="创建时间：2018-05-16 14:24:16 / 修改时间：18:03:29" itemprop="dateCreated datePublished" datetime="2018-05-16T14:24:16+08:00">2018-05-16</time>
             
 
             
@@ -362,8 +362,10 @@
 
       
         
-          
-            <h1 id="Hexo-Next-GitHub搭建个人博客"><a href="#Hexo-Next-GitHub搭建个人博客" class="headerlink" title="Hexo+Next+GitHub搭建个人博客"></a>Hexo+Next+GitHub搭建个人博客</h1><blockquote>
+          <hr>
+<p>title: Hexo+Next+GitHub搭建个人博客<br>date: 2018-05-16 18:01:16<br>categories: 默认分类<br>tags: [Hexo]<br>description: Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<hr>
+<h1 id="Hexo-Next-GitHub搭建个人博客"><a href="#Hexo-Next-GitHub搭建个人博客" class="headerlink" title="Hexo+Next+GitHub搭建个人博客"></a>Hexo+Next+GitHub搭建个人博客</h1><blockquote>
 <p>人生苦短，写点东西<br>                                            ——xlihub  </p>
 </blockquote>
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="何为Hexo"><a href="#何为Hexo" class="headerlink" title="何为Hexo"></a>何为Hexo</h3><blockquote>
@@ -374,38 +376,14 @@
 <p>然后使用 npm 即可完成 Hexo 的安装<br><code>$ npm install -g hexo-cli</code></p>
 <h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><p>在指定文件夹中（<folder>），初始化Hexo<br><code>$ hexo init &lt;folder&gt;</code></folder></p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>编辑_config.yml文件，进行站点配置<br><a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">配置说明</a></p>
-<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br><code>$ hexo server</code></p>
-<h2 id="Next"><a href="#Next" class="headerlink" title="Next"></a>Next</h2><p>在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
-<p>为了描述方便，在以下说明中，将前者称为 ::站点配置文件::， 后者称为 ::主题配置文件::。</p>
-<h3 id="何为Next"><a href="#何为Next" class="headerlink" title="何为Next"></a>何为Next</h3><blockquote>
-<p>挺好看的Hexo主题<br>                                                ——xlihub  </p>
-</blockquote>
-<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>在Github上clone Next的代码<br><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">hexo-theme-next</a></p>
-<h3 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h3><p>打开 ::站点配置文件::， 找到 theme 字段，并将其值更改为 hexo-theme-next。<br><code>theme: hexo-theme-next</code></p>
-<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p><code>$ hexo s --debug</code></p>
-<h3 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h3><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next主题设定</a></p>
-<h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><blockquote>
-<p>大型在线同性交友平台<br>现在我们已在把网站在本地搭起来了，为了让别人能通过互联网访问我们的网站，还需要将其发布到网络上，这里我们以发布到github上为例。</p>
-</blockquote>
-<h3 id="创建Github-Pages"><a href="#创建Github-Pages" class="headerlink" title="创建Github Pages"></a>创建Github Pages</h3><p>首先，我们要在github上新建一个Repository，名称固定为<br><code>yourNickName.github.io</code></p>
-<h3 id="添加ssh-key"><a href="#添加ssh-key" class="headerlink" title="添加ssh key"></a>添加ssh key</h3><p>复制id_rsa.pub中的字符串</p>
-<hr>
-<p><img src="Hexo+Next+GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/New%20ssh%20key.png" alt=""></p>
-<h3 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h3><p>安装 hexo-deployer-git。<br><code>$ npm install hexo-deployer-git --save</code><br>在站点配置文件中修改配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git </span><br><span class="line">  repo: &lt;repository url&gt; //库（Repository）地址</span><br><span class="line">  branch: [branch] //分支名称。(master)</span><br><span class="line">  message: //自定义提交信息 (默认为 Site updated: &#123;&#123; now(&apos;YYYY-MM-DD HH:mm:ss&apos;) &#125;&#125;)</span><br></pre></td></tr></table></figure></p>
-<h3 id="生成静态文件并部署"><a href="#生成静态文件并部署" class="headerlink" title="生成静态文件并部署"></a>生成静态文件并部署</h3><p>生成文件<br><code>$ hexo generate</code><br>监视文件变动<br><code>$ hexo generate --watch</code><br>完成后部署<br><code>$ hexo generate --deploy</code><br>简写为：<code>$ hexo g -d</code></p>
-<h2 id="使用个人域名"><a href="#使用个人域名" class="headerlink" title="使用个人域名"></a>使用个人域名</h2><hr>
-<p>不满足于让其他人用username.github.io这样奇奇怪怪的域名来访问自己的个人博客？用个人域名来彰显B格</p>
-<hr>
-<h3 id="DNS管理"><a href="#DNS管理" class="headerlink" title="DNS管理"></a>DNS管理</h3><p>进入域名的dns管理界面<br><img src="Hexo+Next+GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/C314D95B-2516-4B7D-AC9F-AB953A86121C.png" alt=""></p>
-<hr>
-<p>我们看到有记录中的类型有A和CNAME类型，首先我们先来认识一下它们（其他的类型大家可以自行了解）</p>
-<p>1.什么是A记录<br>A记录是IP解析，直接将域名指向某个IP，如果IP有所变动，那么A记录那边也必须更改。<br>2.什么是CNAME别名解析<br>CNAME是别名解析，别名解析是先将域名解析到主机别名再转跳到IP，这样主机IP改变了不用重新解析。<br>3.A记录与CNAME的主要区别<br>a.cname解析的生效时间要比A记录快，A记录往往要几个小时至48小时，cname几分钟即可<br>b.如果是A记录，一旦主机的IP发生变化，则必须重新解析；如果是cname解析，则无需重新解析。<br>4.什么时候用A记录，什么时候用CNAME别名解析<br>经常换IP，建议用CNAME别名解析，不经常换IP，建议用A记录直接解析到IP。<br>多线空间，必须用CNAME别名解析。<br><strong>说白了，就是A直接指向，CNAME间接指向</strong></p>
-<hr>
-<p>将A的值设定为github.io的ip地址<br>将CNAME的值设定为github.io的域名<br>如果使用二级域名（blog.xxx.xx），添加CNAME，设定key为blog，value为github.io的域名</p>
-<h3 id="Github-Pages设置"><a href="#Github-Pages设置" class="headerlink" title="Github Pages设置"></a>Github Pages设置</h3><p>在仓库的settings中设置Custom domain为自己的个人域名<br><img src="Hexo+Next+GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/013D126E-9EE2-42BF-8B59-390243C85699.png" alt=""></p>
-<h3 id="创建CNAME文件"><a href="#创建CNAME文件" class="headerlink" title="创建CNAME文件"></a>创建CNAME文件</h3><p>在Hexo的根目录中创建一个CNAME文件，编辑个人域名到文件中<br><code>touch CNAME</code><br>生成静态文件并部署<br><code>Hexo g -d</code></p>
-
-          
+<h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br><code>$ hexo server</code><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/16/Hexo+Next+GitHub搭建个人博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
